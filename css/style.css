@@ -93,11 +93,14 @@ nav ul li {
 
 /* Slider container */
 .slider {
+	padding: 0px 40px 0px 40px;
 	display:flex;
 	gap: 40px;
-	justify-content: center;
+	justify-content: flex-start;
 	/* Scrolling behavior */
-	overflow-x: auto;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	/* scroll-padding: 50%; */
 
 	/* TODO 
 		default behavior for a scrolling slider
@@ -110,10 +113,16 @@ nav ul li {
 		centered with partial slides to the left and right
 
 		Implement transitions so that the left and right partial slides are faded
+		to do this, the app will need to be aware of the focus.
+		Maybe it can be done w/ a semi-transparent overlay...
 
+		scrolling behavior will need to be removed replaced with a flexwrap
+		layout for larger screens
 	
-	
-	
+		implement a function to set the initial scroll position so that 2 way scrolling
+		is possible
+
+
 	*/
 
 
@@ -123,14 +132,18 @@ nav ul li {
 
 
 /* Project Card */
+/* TODO implement card import from gSheet via jQuery */
+/* TODO implement snapping behavior and implement infinite carousel behavior */
+
 
 .placeholder-project-card {
+	scroll-snap-align: center;
 	flex-shrink: 0;
 	margin: 0 auto;
 
 	/* Start with fixed width, see if we can make it repsonsive */
-	width: 300px;
-	/* width: 80vw; */
+	/* width: 100%; */
+	width: 80vw;
 	
 	height: 100%;
 	display: flex;

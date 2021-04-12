@@ -26,9 +26,27 @@ $.ajax(gSheetJsonURL)
 	////////////////////////////////////////
 	// Code to render the project
 	////////////////////////////////////////
+
+	const $slider = $("#projects .slider")
 	projects.forEach((project, index) =>{
-		console.log(`project ${index}`,project)
-		const $projectCard = $("<section>")
+		console.log(`project ${index}`,project.description)
+		
+		// const $projectCard = $("<div>");
+		// $projectCard.text(project.description);
+		// console.log($projectCard)
+
+		const $projectCard = $(`
+			<div class="placeholder-project-card">
+				<div class="project-thumbnail">
+					<p class="project-text">${project.description}</p>
+				</div>
+				<div class="button-group">
+					<button>view</button>
+					<button>git</button>
+				</div>
+			</div>
+			`);
+		$slider.append($projectCard)
 	})
 
 	////////////////////////////////////////
