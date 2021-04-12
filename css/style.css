@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	/* border: 1px solid !important; */
+}
+
+/* .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	grid-template-areas:
+		'header   header   header  '
+		'about    about    about   '
+		'projects projects projects'
+		'contact  contact  contact '
+		'footer   footer   footer  ';
+
+} */
+
+/* Layout for Mobile view */
+.container {
+	border: 1px solid red;
+	margin: 0;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100vw;
+	gap: 0px;
+	grid-template-rows: 40px 50vh 40vh 40vh 30px ;
+	grid-template-areas:
+		'header  '
+		'about   '
+		'projects'
+		'contact '
+		'footer  ';
+}
+
+header {
+	margin: 0;
+	border: 1px solid magenta;
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+}
+header h1 {
+	font-size: 40px
+}
+header nav {
+	display: flex;
+	display: none;
+}
+#hamburger {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	font-size: 48px;
+}
+footer {
+	background-color: gray;
+	display: flex;
+}
+footer nav {
+	display: flex;
+}
+
+
+
+
+
+
+
+
+/* Define all grid areas */
+header {
+	grid-area: header;
+}
+section#about {
+	grid-area: about;
+}
+section#projects {
+	grid-area: projects;
+}
+section#contact {
+	grid-area: contact
+}
+footer {
+	grid-area: footer;
+}

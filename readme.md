@@ -14,7 +14,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Incomplete
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 1| HTML / CSS rough | Incomplete
+|Day 2| Google sheet API / data flow | Incomplete
+|Day 2| Work with styling | Incomplete
+|Day 3| Implement dynamic elements|Incomplete
+|Day 3| Revise | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -48,9 +52,9 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Examples I like | Notes         |
 |----------------------------|-----------------------|
-| [chippd.github.io](https://chippd.github.io/)  | nice scrollable flow.  tools section          |
-| [findmathew.com](http://findmatthew.com/)    | organization and transitions in the project section |
-| [caferati.me](https://caferati.me/) | nice interactivity |
+|[chippd.github.io](https://chippd.github.io/)  | nice scrollable flow.  tools section          |
+|[findmathew.com](http://findmatthew.com/)    | organization and transitions in the project section |
+|[caferati.me](https://caferati.me/) | nice interactivity |
 |[adhamdannaway.com](https://www.adhamdannaway.com/) | nice clean design |
 |[noellelaureano.com](https://www.noellelaureano.com/#projects) |simplicity|
 |[dev.jesentanadi.com](https://dev.jesentanadi.com/) | very simple and clean line based design|
@@ -65,27 +69,14 @@ https://builtbysilo.com/portfolio/
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://drive.google.com/file/d/1VkGwHxbYrh2Mlx2nWTJyaQ3J3qClhjfJ/view?usp=sharing)
-- [Tablet](https://drive.google.com/file/d/1N2grMMHj2k32SA3rRCu-6rZ_lvGXLcmM/view?usp=sharing)
-- [Desktop](https://drive.google.com/file/d/1ZKhB1jCvQQPAW02S_l7VnchjKfSRhY_s/view?usp=sharing)
+- [Mobile](https://drive.google.com/file/d/1l2PsRfR_J_BxNDYHg4hvwoXwHR2-R8zJ/view?usp=sharing)
+- [Tablet](https://drive.google.com/file/d/1YH2OgcOxvswRh_BPXCJnDVrJho0thrrB/view?usp=sharing)
+- [Desktop](https://drive.google.com/file/d/1BWDiYQ4s1Z4ovXpjv7GiCR9CzRl0-j_e/view?usp=sharing)
 
 
 ## Time/Priority Matrix 
 
-|Item|Time|Priority|
-|-----|------|-----|
-|Code layout|1|9|
-|Build web component for project thumb|2|2|
-|build nav bar functionality|3|4|
-|build out project data handling|2|8|
-|build form submission|2|9|
-|write biographical copy|1|7|
-|write project copy|2.5|7|
-|generate project graphics|1|9|
-|implement swipe-carousel (something off-the shelf?)|3|2|
-|build project landing pages|2|4|
-
-
+[link to gSheet](https://docs.google.com/spreadsheets/d/12QSq3K8sjpmME3fQOrl1ET2wad5jJ-gZFdQ8707MDew/edit#gid=1751921927)
 ![Image of Matrix](https://docs.google.com/spreadsheets/d/e/2PACX-1vTd_GjGcSuXeJZpy0v-4b6Ki8dp6rj5X8Z2bjot0U7sNsbgm1QNFqJb3HMZU44CeR3fwIeCZcP0634M/pubchart?oid=1015964824&format=image)
 
 
@@ -108,30 +99,24 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
-
 #### MVP
-TBD
-
-| Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+|Item|Time - 22.5|Priority|
+|-----|------|-----|
+|Code layout|2|9|
+|Build web component for project thumb|2|2|
+|build nav bar functionality|3|4|
+|build out project data handling|2|8|
+|build form submission|2|9|
+|write biographical copy|1|7|
+|write project copy|2.5|7|
+|generate project graphics|1|9|
+|implement swipe-carousel (something off-the shelf?)|3|2|
+|build project landing pages|2|4|
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
+| Project Hover | L | 1hr | -hr | hr |
 | Interactive Banner | M | 4hr | hr |
 | Materialize | H | 4hr | -hr | hr |
 | Bootstrap | H | 4hr | hr |
