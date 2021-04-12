@@ -45,11 +45,6 @@ Using Google sheet to serve project data
 
 Search and compare at least 3 profile web sites.  Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site.
 
-Link To Site  | One Thing I'd Like To Incorporate | 
-| ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)| landing page animation
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
 
 Examples I like | Notes         |
 |----------------------------|-----------------------|
@@ -70,17 +65,26 @@ https://builtbysilo.com/portfolio/
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- Tablet
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Mobile](https://drive.google.com/file/d/1VkGwHxbYrh2Mlx2nWTJyaQ3J3qClhjfJ/view?usp=sharing)
+- [Tablet](https://drive.google.com/file/d/1N2grMMHj2k32SA3rRCu-6rZ_lvGXLcmM/view?usp=sharing)
+- [Desktop](https://drive.google.com/file/d/1ZKhB1jCvQQPAW02S_l7VnchjKfSRhY_s/view?usp=sharing)
 
 
 ## Time/Priority Matrix 
+
+|Item|Time|Priority|
+|-----|------|-----|
+|Code layout|1|9|
+|Build web component for project thumb|2|2|
+|build nav bar functionality|3|4|
+|build out project data handling|2|8|
+|build form submission|2|9|
+|write biographical copy|1|7|
+|write project copy|2.5|7|
+|generate project graphics|1|9|
+|implement swipe-carousel (something off-the shelf?)|3|2|
+|build project landing pages|2|4|
+
 
 ![Image of Matrix](https://docs.google.com/spreadsheets/d/e/2PACX-1vTd_GjGcSuXeJZpy0v-4b6Ki8dp6rj5X8Z2bjot0U7sNsbgm1QNFqJb3HMZU44CeR3fwIeCZcP0634M/pubchart?oid=1015964824&format=image)
 
@@ -109,6 +113,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 #### MVP
+TBD
+
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Hamburger | H | 1hr | hr |
