@@ -17,14 +17,14 @@
 } */
 
 /* Layout for Mobile view */
-.container {
-	border: 1px solid red;
+.wrapper {
 	margin: 0;
 	height: 100%;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 100vw;
 	gap: 0px;
-	grid-template-rows: 40px 50vh 40vh 40vh 30px ;
+	grid-template-rows: 44px 50vh 40vh 40vh 30px ;
 	grid-template-areas:
 		'header  '
 		'about   '
@@ -33,36 +33,136 @@
 		'footer  ';
 }
 
+
+
 header {
-	margin: 0;
-	border: 1px solid magenta;
+	background-color: gray;
+}
+#about {
+	background-color: beige;
+}
+#projects {
+	
+	background-color: brown;
+}
+#contact {
+	background-color: orange;
+}
+footer {
+	background-color: gray;
+}
+
+
+
+
+
+/* Placeholder stying */
+
+
+
+
+
+header {
 	background-color: gray;
 	display: flex;
 	justify-content: space-between;
+	padding: 5px 10px;
 }
 header h1 {
-	font-size: 40px
+	font-size: 36px
 }
 header nav {
 	display: flex;
 	display: none;
 }
 #hamburger {
-	width: 40px;
-	height: 40px;
-	background-color: black;
-	font-size: 48px;
+	font-size: 30px;
 }
 footer {
 	background-color: gray;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-footer nav {
+footer nav ul{
 	display: flex;
 }
+nav ul li {
+	margin: 5px;
+}
+
+/* Slider container */
+.slider {
+	display:flex;
+	gap: 40px;
+	justify-content: center;
+	/* Scrolling behavior */
+	overflow-x: auto;
+
+	/* TODO 
+		default behavior for a scrolling slider
+		is for the slide to page to load with the 
+		first slide aligned to the left.
+		Want to turn this into an infinite carousel
+		Use jQuery to shift items to the beginnig or end of the list
+
+		Implement snapping so that the view is always of a full slide
+		centered with partial slides to the left and right
+
+		Implement transitions so that the left and right partial slides are faded
+
+	
+	
+	
+	*/
+
+
+}
 
 
 
+
+/* Project Card */
+
+.placeholder-project-card {
+	flex-shrink: 0;
+	margin: 0 auto;
+
+	/* Start with fixed width, see if we can make it repsonsive */
+	width: 300px;
+	/* width: 80vw; */
+	
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;;
+}
+.placeholder-project-card .project-thumbnail {
+	margin: 20px;
+	width: 100%;
+	height:250px;
+	background-color: rgba(255,255,255);
+	box-shadow: 0 0 10px 3px black;
+	border-radius: 10px;
+}
+.placeholder-project-card .button-group {
+	display:flex;
+	justify-content: center;
+}
+.placeholder-project-card .button-group button{
+	background-color: transparent;
+	box-shadow: none;
+	border: 0px;
+	border-left: 3px solid;
+	border-right: 3px solid;
+	font-size: 1.5em;
+	width: 75px
+
+}
+.placeholder-project-card .button-group button:first-of-type{
+	border-right: 0;
+}
 
 
 
