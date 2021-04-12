@@ -1,8 +1,8 @@
 # Project Overview
 
-**PROJECT NAME:** dfadfadfsdfadf
+**PROJECT NAME:** Project 1 - Portfolio
 
-**PROJECT AUTHOR:** lkjlkjljlkadfsd
+**PROJECT AUTHOR:** Ben Norrichs
 
 ## Project Schedule
 
@@ -20,13 +20,26 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 6| Present | Incomplete
 
 
-## Project Description
+## Project Description 
+This a portfolio site. It will present myself to the world and will showcase some of my work.  There will be a few sections including:
+- About 
+  - biographical , educational, and professional info
+- Projects
+  - simple thumbnail presentation of past work, including coding projects and touching on prior career accomplishments (management and design/build work)
+  - thumbnails link to more in-depth presentations and downloadable content
+- Skills
+	- tech stack w/ nifty icons?
+- Contact
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Aesthetically, I want to keep things crisp, clean, and very fast.
+I would prefer it to mostly be vanilla HTML / CSS,  w/ some fun elements in js.  I'm more interested in pushing the boundaries w/ great CSS than utilizing something slick provided by a framework.  
+
+I have some older personal projects that could be good showcases if some work is put into them, so I'd rather spend time on that than a particularly complicated portfolio site.
 
 ## Google Sheet
+Using Google sheet to serve project data
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+[gSheet Link](https://docs.google.com/spreadsheets/d/12QSq3K8sjpmME3fQOrl1ET2wad5jJ-gZFdQ8707MDew/edit?usp=sharing) 
 
 ## Portfolio I want to Emulate
 
@@ -38,6 +51,19 @@ Link To Site  | One Thing I'd Like To Incorporate |
 |[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
 | [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
 
+Examples I like | Notes         |
+|----------------------------|-----------------------|
+| [chippd.github.io](https://chippd.github.io/)  | nice scrollable flow.  tools section          |
+| [findmathew.com](http://findmatthew.com/)    | organization and transitions in the project section |
+| [caferati.me](https://caferati.me/) | nice interactivity |
+|[adhamdannaway.com](https://www.adhamdannaway.com/) | nice clean design |
+|[noellelaureano.com](https://www.noellelaureano.com/#projects) |simplicity|
+|[dev.jesentanadi.com](https://dev.jesentanadi.com/) | very simple and clean line based design|
+|[scottdemeo.dev](https://scottdemeo.dev/)|very text based design.  simple, clean|
+
+Portfolio Designs to avoid... (no offense to the designers)
+https://builtbysilo.com/portfolio/
+
 ---
 
 ## Wireframes
@@ -45,6 +71,7 @@ Link To Site  | One Thing I'd Like To Incorporate |
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
 - [Mobile](https://i.imgur.com/P3iBEZf.jpg)
+- Tablet
 - [Desktop](https://i.imgur.com/xpOWo0E.jpg)
 
 Wireframing Resources:
@@ -55,15 +82,8 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
+![Image of Matrix](https://docs.google.com/spreadsheets/d/e/2PACX-1vTd_GjGcSuXeJZpy0v-4b6Ki8dp6rj5X8Z2bjot0U7sNsbgm1QNFqJb3HMZU44CeR3fwIeCZcP0634M/pubchart?oid=1015964824&format=image)
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
 ### MVP/PostMVP - 5min
 
@@ -71,10 +91,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+ - Use semantic markup for HTML and CSS, adhering to best practices.
+ - Use CSS GRID to create a multi-column layout
+ - Use Flexbox for content
+ - Must be mobile mobile first, then tablet and desktop responsive
+ - Must pull in projects via API call from google sheet
+ - Be deployed and accessible online either via Github Pages or Surge.
 
 #### PostMVP 
 
@@ -111,7 +133,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 20hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ I would like to code an initial version of this without relying on additional libraries.
+ jQuery makes sense at this time, but I want to figure out my own HTML/css, and mostly vanilla JS
 
 ## Code Snippet
 
