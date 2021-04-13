@@ -158,6 +158,7 @@ nav ul li {
 	background-color: rgba(255,255,255);
 	box-shadow: 0 0 10px 3px black;
 	border-radius: 10px;
+	background-size: contain;
 }
 .placeholder-project-card .button-group {
 	display:flex;
@@ -167,11 +168,14 @@ nav ul li {
 	background-color: transparent;
 	box-shadow: none;
 	border: 0px;
-	border-left: 3px solid;
-	border-right: 3px solid;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
 	font-size: 1.5em;
 	width: 75px
 
+}
+.placeholder-project-card .button-group button:hover {
+	color: tomato;
 }
 .placeholder-project-card .button-group button:first-of-type{
 	border-right: 0;
@@ -196,4 +200,18 @@ section#contact {
 }
 footer {
 	grid-area: footer;
+}
+
+/* Adjustments for Tablet view */
+
+@media screen and (min-width: 768px){
+	/* TODO: remove the following once working well */
+	header {
+		background: yellowgreen;
+	}
+
+
+
+}
+	
 }
