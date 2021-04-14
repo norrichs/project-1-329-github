@@ -151,7 +151,10 @@ function reverse(string) {
     - Potential solution: use JS to get the global variable window.innerHeight, and set this to a css variable like --vh, and use that instead of vh
     - [css tricks writeup of solution](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)
     - trying that method by manually creating a custom vh breaks scroll snap...
+    - fixed it by fixing calc() syntax.   Implemented javascript setting of variable on page render.  works.  committed
   - It should be noted that the scroll behavior in devtools is not great when using a mouse scroll wheel, but is fine using click-drag, and is similar deployed to actual mobile.  scroll wheel usage on mobile isn't a targeted use case, so I won't work on resolving this
+
+
 
 
 #### SAMPLE.....

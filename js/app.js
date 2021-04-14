@@ -9,7 +9,7 @@ const gSheetJsonURL = "https://spreadsheets.google.com/feeds/list/12QSq3K8sjpmME
 $.ajax(gSheetJsonURL)
 .then((data) =>{
 	
-	console.log(data)
+	// console.log(data)
 	// Map over the data, generate a simpler dataset
     const projects = data.feed.entry.map((item) => {
         return {
@@ -21,7 +21,7 @@ $.ajax(gSheetJsonURL)
 
 		}
     })
-    console.log(projects)
+    // console.log(projects)
 
 	////////////////////////////////////////
 	// Code to render the project
@@ -30,7 +30,7 @@ $.ajax(gSheetJsonURL)
 	const $slider = $("#projects .slider")
 
 	projects.forEach((project, index) =>{
-		console.log(`project ${index}`,project.description, project.image, project.liveURL, project.project)
+		// console.log(`project ${index}`,project.description, project.image, project.liveURL, project.project)
 		// const $projectCard = $("<div>");
 		// $projectCard.text(project.description);
 		// console.log($projectCard)
@@ -52,6 +52,64 @@ $.ajax(gSheetJsonURL)
 	// Scrolls slider window to computed center
 	centerSlider()
 	getDeviceVH();
+
+
+
+	// Infinite Scroll
+	//	setup an event listener that responds to horizontal scroll events in the slider by appending or prepending
+	//	project cards for an infinite-scroll behavior
+
+	// GET slider container
+	//const $sliderDiv = $("#projects div.slider")
+	// 	EVENT - scroll release
+	
+	// 		GET scroll position
+	// 		IF scroll position is left of center
+	// 			GRAB last card
+	// 			PREPEND slider -> last card
+	// 		ELSE IF scroll position is right of center
+	// 			GRAB first card
+	// 			APPEND slider -> first card
+	// 	END EVENT
+	let lastScrollLeft = 0;
+	$slider.scroll(function(event){
+		var sl = $(this).scrollLeft()
+		if (sl > lastScrollLeft){
+			console.log('left scroll')
+		} else {
+			console.log('right scroll')
+		}
+		lastScrollLeft = sl
+	})
+
+// TODO: check for potential issues
+// 		below code throws LOTS of events, and with scroll snap the last event quite possibly will be opposite
+// 		of the user's intentional scroll movement
+//		Maybe just use absolute scroll position relative to the center.
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+       // downscroll code
+   } else {
+      // upscroll code
+   }
+   lastScrollTop = st;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	////////////////////////////////////////
 	// End Then
 	////////////////////////////////////////
@@ -76,19 +134,13 @@ $navBurger.on('click',(e) => {
 	}
 })
 
-/*
-Infinite Scroll
-GET slider container
-	EVENT - scroll release
-		GET scroll position
-		IF scroll position is left of center
-			GRAB last card
-			PREPEND slider -> last card
-		ELSE IF scroll position is right of center
-			GRAB first card
-			APPEND slider -> first card
-	END EVENT
-*/
+
+
+
+
+
+
+
 // Function necessary to account for different vh implementation accross devices.  Set vh to actual window
 //		Thanks to: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 const getDeviceVH = () => {
