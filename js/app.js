@@ -1,3 +1,5 @@
+
+
 const gSheetWebURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTd_GjGcSuXeJZpy0v-4b6Ki8dp6rj5X8Z2bjot0U7sNsbgm1QNFqJb3HMZU44CeR3fwIeCZcP0634M/pubhtml?gid=0&single=true"
 
 const gSheetJsonURL = "https://spreadsheets.google.com/feeds/list/12QSq3K8sjpmME3fQOrl1ET2wad5jJ-gZFdQ8707MDew/1/public/full?alt=json"
@@ -49,6 +51,7 @@ $.ajax(gSheetJsonURL)
 	})
 	// Scrolls slider window to computed center
 	centerSlider()
+	getDeviceVH();
 	////////////////////////////////////////
 	// End Then
 	////////////////////////////////////////
@@ -86,6 +89,15 @@ GET slider container
 			APPEND slider -> first card
 	END EVENT
 */
+// Function necessary to account for different vh implementation accross devices.  Set vh to actual window
+//		Thanks to: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+const getDeviceVH = () => {
+	// Get the actual viewport height and convert to vh unit
+	const vh = window.innerHeight * 0.01;
+	// set custom css property for use by document
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	console.log('custom viewport height set')
+}
 
 const centerSlider = () => {
 	console.log('center the slider?')
