@@ -143,9 +143,16 @@ function reverse(string) {
   - Resolution, using css native scrolling and snap scrolling features.
   - Will implement js function to make infinite scroll possible
 
-- Vertical scroll snap
+- Vertical scroll snap issues
   - I can't figure out why yet, but scroll snapping isn't working for me vertically.  I have example scratch files where it works...
-  
+    - Resolution:  changed container height from 100% to 100vh...
+
+  - it looks like 100vh in chrome dev tools doesn't account for the application cruft at the top of the browser on an actual mobile device.  Meaning a view sized to take exactly 100% of the vertical viewport gets cut off on mobile...
+    - Potential solution: use JS to get the global variable window.innerHeight, and set this to a css variable like --vh, and use that instead of vh
+    - [css tricks writeup of solution](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)
+    - trying that method by manually creating a custom vh breaks scroll snap...
+  - It should be noted that the scroll behavior in devtools is not great when using a mouse scroll wheel, but is fine using click-drag, and is similar deployed to actual mobile.  scroll wheel usage on mobile isn't a targeted use case, so I won't work on resolving this
+
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
