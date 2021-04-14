@@ -138,7 +138,8 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+- Project slider
+  - I don't want to use a slider implementation that I didn't implement.  In mobile view, my ideal 
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
