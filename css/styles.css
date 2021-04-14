@@ -2,20 +2,6 @@
 	box-sizing: border-box;
 	/* border: 1px solid !important; */
 }
-
-/* .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-
-	grid-template-areas:
-		'header   header   header  '
-		'about    about    about   '
-		'projects projects projects'
-		'contact  contact  contact '
-		'footer   footer   footer  ';
-
-} */
-
 /* Layout for Mobile view */
 .wrapper-hidden-nav {
 	--header-height: 3.5em;
@@ -26,7 +12,7 @@
 
 .wrapper {
 	margin: 0;
-	height: 100%;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 100%;
 

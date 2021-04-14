@@ -139,7 +139,13 @@ function reverse(string) {
 
 ## Issues and Resolutions
 - Project slider
-  - I don't want to use a slider implementation that I didn't implement.  In mobile view, my ideal 
+  - I don't want to use a slider implementation that I didn't implement.  
+  - Resolution, using css native scrolling and snap scrolling features.
+  - Will implement js function to make infinite scroll possible
+
+- Vertical scroll snap
+  - I can't figure out why yet, but scroll snapping isn't working for me vertically.  I have example scratch files where it works...
+  
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
