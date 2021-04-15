@@ -112,7 +112,7 @@ header nav ul {
 	Example markup from https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/ 
 	TODO: restore usage of this.  ISSUE: z-index is pushing all the way up, seemingly in response to making #projects a flex container*/
 
-#about:after {
+/* #about:after {
 	background: inherit;
 	bottom: 0;
 	content: 'this is the about after';
@@ -125,7 +125,7 @@ header nav ul {
 	transform-origin: 100%;
 	z-index: -5;
 	/* box-shadow: 0 0 10px 10px; */
-}
+} */
 
 #projects {
 	border-top: 10px 20px solid black;
@@ -213,6 +213,14 @@ nav ul li {
 
 	*/
 }
+/* .slider-buttons{
+	border: 2px solid darkmagenta;
+	display: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+
+} */
 /* Project Card */
 /* TODO implement infinite carousel behavior */
 /* TODO change snapping behavior for larger formats */
@@ -343,22 +351,3 @@ TODO: 	change project layout to a flexible display that responds to changing win
 
 		*/
 
-@media screen and (min-width: 1025px) {
-
-	.wrapper {
-		margin: 0 auto;
-		max-width: 1200px;
-	}
-
-	/* .slider {
-
-	} */
-	.project-card {
-		height: 600px;
-		width: 500px;
-	}
-
-	#projects .slider {
-
-	}
-} 
