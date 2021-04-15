@@ -38,12 +38,18 @@ $.ajax(gSheetJsonURL)
 		const $projectCard = $(`
 			<div class="project-card">
 				<div class="project-thumbnail" style="background-image: url(${project.image})">
-					<h2>${project.project}</h2>
-					<p class="project-text">${project.description}</p>
+					<aside>
+						<h2>${project.project}</h2>
+						<p class="project-text">${project.description}</p>
+					</aside>
 				</div>
 				<div class="button-group">
-					<button>view</button>
-					<button>git</button>
+					<form action="${project.liveurl}">
+						<button>view</button>
+					</form>
+					<form action="${project.giturl}">
+						<button type="submit">git</button>
+					</form>
 				</div>
 			</div>
 			`);
