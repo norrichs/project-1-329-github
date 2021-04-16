@@ -36,7 +36,7 @@ $.ajax(gSheetJsonURL).then((data) => {
 			<div class="project-card">
 				<div class="project-thumbnail" style="background-image: url(${project.image})">
 					<aside>
-						<h2>${project.project}</h2>
+						<h3>${project.project}</h3>
 						<p class="project-text">${project.description}</p>
 					</aside>
 				</div>

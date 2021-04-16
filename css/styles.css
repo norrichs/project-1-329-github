@@ -158,29 +158,16 @@ header nav ul {
 	Example markup from https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/ 
 	TODO: restore usage of this.  ISSUE: z-index is pushing all the way up, seemingly in response to making #projects a flex container*/
 
-/* #about:after {
-	background: inherit;
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 25%;
-	left: 0;
-	position: absolute;
-	right: 0;
-	transform: skewY(-5deg);
-	transform-origin: 100%;
-	z-index: -5;
-} */
-
 #projects {
-	border-top: 10px 20px solid black;
 	scroll-snap-align: end;
-	/* background-color: cornflowerblue; */
 	grid-area: projects;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	z-index: 3;
+}
+#projects h2 {
+	margin: 10px 0 0 10px;
+	font-size: 3em;
 }
 #contact {
 	scroll-snap-align: start;
@@ -379,11 +366,11 @@ footer h3 {
 	margin-bottom: 20%;
 }
 /* TODO: adjust text styling so that h2 and p text are similar heights when rendered at different sizes */
-.project-card .project-thumbnail aside h2 {
+.project-card .project-thumbnail aside h3 {
 	display: block;
 	max-height: 20%;
 	/* width: 20%; */
-	font-size: 2em;
+	font-size: 1em;
 	justify-content: center;
 	writing-mode: vertical-rl;
 	text-orientation: sideways-right;
