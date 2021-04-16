@@ -26,6 +26,10 @@ nav ul a {
 	border-left: 3px solid;
 	padding: 5px 0 5px 5px;
 }
+nav ul a:hover {
+	color: tomato;
+	text-shadow: 0 0 10px black;
+}
 header h1 span:first-of-type {
 	font-weight: 700;
 }
@@ -419,9 +423,6 @@ footer h3 {
 	header nav {
 		display: block;
 	}
-	header {
-		background-color: red;
-	}
 	.slider {
 		scroll-padding-left: 29px;
 		scroll-padding-right: 29px;
@@ -451,7 +452,7 @@ footer h3 {
 	.hidden-nav {
 		display: block;
 	}
-	.wrapper-hidden-nav {f
+	.wrapper-hidden-nav {
 		--header-height: 5em;
 	}
 	header {
@@ -465,33 +466,49 @@ footer h3 {
 }
 /* Desktop layout */
 @media screen and (min-width: 1200px){
-	header {
-		background: blue;
-
-	}
 	.wrapper {
 		margin: 0 auto;
 		max-width: 1200px;
 	}
 	header {
-		background-color: blue !important;
-		--header-height: 400px;
-		height: var(--header-height;)
+		grid-template-columns: auto auto 5fr;
+		grid-template-rows: 1fr 1fr;
+
+		grid-template-areas:
+			"title1  title2   nav"
+			"title1  tag      nav";
 	}
-	.wrapper {
-		grid-template-rows:
-			var(--header-height) calc(40vh - var(--header-height))
-			60vh calc(40vh - 40px) 40px;
-	}
-	header h1 span:first-of-type {
-		font-size: 2em;
+	header h1:first-of-type {
+		grid-area: title1;
+		font-size: 4em;
+		font-weight: 800;
 		writing-mode: vertical-rl;
 		text-orientation: sideways-right;
 	}
-	header h1 span:last-of-type {
-		font-size: 1.5em;
+	header h1:last-of-type {
+		padding-left: 10px;
+		grid-area: title2;
+		font-size: 3em;
 		font-weight: 200;
 	}
+	header h2 {
+		font-size: 1em;
+	}
+
+
+	.wrapper {
+		/* grid-template-rows:
+			var(--header-height) 
+			calc(50vh - var(--header-height))
+			50vh 
+			calc(50vh - 50px) 
+			50px; */
+		grid-template-rows: 150px 1fr 1fr 1fr 50px;
+		overflow-y: auto;
+		scroll-snap-type: none;
+
+	}
+
 	.project-card {
 		height: 600px;
 		width: 400px;
@@ -499,21 +516,11 @@ footer h3 {
 	.slider-button {
 		display: block !important;
 	}
+	.slider::-webkit-scrollbar {
+		display: none;
+	}
+	.slider {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 }
-
-
-
-/* 	
-Desktop Layout
-TODO: 	change project layout to a flexible display that responds to changing window sizes with elegant flow.  
-		Cards should be smaller maybe more than one row? 
-		Card text should be bigger
-		Split up about layout to show side by side text and photo
-		need nav buttons to slide carousel
-		turn off scroll-snap?
-
-		*/
-
-/* @media screen and (min-width: 1200) {
-
-} */
