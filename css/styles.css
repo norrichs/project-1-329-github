@@ -11,7 +11,7 @@
 
 /* Layout for Mobile view */
 .wrapper-hidden-nav {
-	--header-height: 3.5em;
+	--header-height: 4em;
 }
 .wrapper-visible-nav {
 	--header-height: 7em;
@@ -126,8 +126,32 @@ header nav ul {
 	grid-area: about;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
 	/* position: relative; */
 	z-index: 5;
+}
+#about-copy {
+	margin: 20px;
+	padding: 20px;
+	border-radius: 15px;
+	max-width: 100%;
+	background-color:rgba(255, 255, 255, 0.75);
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+#about-copy h2 {
+	font-size: 3em;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+}
+#about-copy div {
+	border-left: 3px solid;
+	padding: 5px;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 /* ANGLED BORDER (actually new div behind) 
@@ -220,7 +244,8 @@ footer {
 	background-color: gray;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+	padding-bottom: 5px
 }
 footer nav ul {
 	display: flex;
@@ -285,9 +310,10 @@ footer h3 {
 	width: 50px;
 	color: gray;
 	display: flex;
-	height: 100%;
+	height: 60%;
 	justify-content: center;
 	align-items: center;
+	align-self: center;
 	background-color: rgba(50, 50, 50, 0.75);
 	font-size: 5em;
 	position: absolute;
