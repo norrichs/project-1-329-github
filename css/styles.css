@@ -380,7 +380,7 @@ TODO: 	change project layout to a flexible display that responds to changing win
 
 		*/
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 1024) {
 	.wrapper {
 		margin: 0 auto;
 		max-width: 1200px;
@@ -388,17 +388,12 @@ TODO: 	change project layout to a flexible display that responds to changing win
 
 	.project-card {
 		height: 600px;
-		width: 500px;
+		width: 400px;
 	}
 	.slider-button {
 		display: block !important;
 	}
 	#projects .slider {
+
 	}
-}
-
-@media screen and (min-width: 1024){
-
-
-
 }
