@@ -151,6 +151,7 @@ header nav ul {
 	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 5px;
 }
 
@@ -261,6 +262,8 @@ footer h3 {
 	height: 100%;
 	display: flex;
 	justify-content: flex-start;
+	/* align-items: flex-end; */
+	/* align-items: center; */
 	gap: 20px;
 
 	/* TODO: see if I can get the slider window to underlay the scroll buttons while still scrolling */
@@ -300,7 +303,6 @@ footer h3 {
 	height: 60%;
 	justify-content: center;
 	align-items: center;
-	align-self: center;
 	background-color: rgba(50, 50, 50, 0.75);
 	font-size: 5em;
 	position: absolute;
@@ -435,10 +437,13 @@ footer h3 {
 	.wrapper {
 		grid-template-rows:
 			var(--header-height) 
-			calc(40vh - var(--header-height))
-			60vh 
-			calc(40vh - 50px) 
+			calc(50vh - var(--header-height))
+			50vh 
+			calc(50vh - 50px) 
 			50px;
+	}
+	.project-card {
+		height: 40vh;
 	}
 	#hamburger {
 		display: none;
